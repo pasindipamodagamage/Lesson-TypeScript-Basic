@@ -41,3 +41,20 @@ function returnDefaultValueWhenValueGivenAsParameter(name:string ="givenValue"){
 }
 console.log(returnDefaultValueWhenValueGivenAsParameter());
 console.log(returnDefaultValueWhenValueGivenAsParameter("TypeScript"));
+
+// 7
+function testEnum(){
+    enum Direction{
+        UP,
+        DOWN,
+        LEFT,
+        RIGHT,
+        DOWNSTRING="DOWN"
+    }
+    let move:Direction=Direction.DOWN;
+    console.log(move);
+
+    let moveString:Direction=Direction.DOWNSTRING;
+    console.log(moveString);
+}
+testEnum();
